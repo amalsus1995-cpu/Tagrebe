@@ -89,5 +89,36 @@
     alert("تم السحب (وهمي)");
   }
 </script>
+  <!-- ملفي الشخصي (وهمي) -->
+<div class="box" id="profileBox" style="display:none">
+  <h3>ملفي الشخصي 👤</h3>
+
+  <p>البريد الإلكتروني:</p>
+  <strong id="userEmail">user@example.com</strong>
+
+  <hr>
+
+  <p>تغيير كلمة المرور</p>
+  <input type="password" placeholder="كلمة المرور الجديدة">
+  <button onclick="changePassword()">حفظ</button>
+
+  <button onclick="backHomeFromProfile()">رجوع</button>
+</div>
+
+<script>
+  function goProfile() {
+    document.getElementById("homeBox").style.display = "none";
+    document.getElementById("profileBox").style.display = "block";
+  }
+
+  function backHomeFromProfile() {
+    document.getElementById("profileBox").style.display = "none";
+    document.getElementById("homeBox").style.display = "block";
+  }
+
+  function changePassword() {
+    alert("تم تغيير كلمة المرور (وهمي)");
+  }
+</script>
 </body>
 </html>
