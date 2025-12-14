@@ -60,6 +60,33 @@
     document.getElementById("loginBox").style.display = "block";
   }
 </script>
+<!-- محفظتي (وهمية) -->
+<div class="box" id="walletBox" style="display:none">
+  <h3>محفظتي 💼</h3>
+  <p>الرصيد الحالي: <strong id="balance">100$</strong></p>
+  <button onclick="deposit()">إيداع</button>
+  <button onclick="withdraw()">سحب</button>
+  <button onclick="backHome()">رجوع</button>
+</div>
 
+<script>
+  function goWallet() {
+    document.getElementById("homeBox").style.display = "none";
+    document.getElementById("walletBox").style.display = "block";
+  }
+
+  function backHome() {
+    document.getElementById("walletBox").style.display = "none";
+    document.getElementById("homeBox").style.display = "block";
+  }
+
+  function deposit() {
+    alert("تم الإيداع (وهمي)");
+  }
+
+  function withdraw() {
+    alert("تم السحب (وهمي)");
+  }
+</script>
 </body>
 </html>
